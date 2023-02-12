@@ -1,0 +1,14 @@
+.button {
+    background-color: hsl(32, 38%, 15%);
+    color: hsl(46, 68%, 96%);
+    border-color: hsl(46, 68%, 96%);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.buttonLightTheme {
+    background-color: hsl(46, 68%, 96%);
+    color: hsl(32, 38%, 15%);
+    border-color: hsl(32deg 27% 49%);
+}

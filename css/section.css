@@ -1,0 +1,46 @@
+.section {
+    overflow-x: auto;
+}
+
+.section__headline {
+    background-color: hsl(32, 38%, 15%);
+    color: hsl(45, 88%, 90%);
+    border-radius: 20px;
+    filter: drop-shadow(0 3px 3px hsl(45, 88%, 90%));
+    padding: 10px;
+    margin: 45px 100px;
+}
+
+.headlineLightTheme {
+    background-color: hsl(36, 43%, 86%);
+    color: hsl(25, 19%, 25%);
+    filter: drop-shadow(0 3px 3px hsl(25, 19%, 25%));
+}
+
+.section__paragraph {
+    margin: 45px 100px;
+    margin-top: 45px;
+    list-style: none;
+}
+
+.section__list {
+    margin: 45px 100px;
+    list-style: none;
+    padding: 0;
+}
+
+.section__paragraph--special {
+    font-size: 35px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    line-height: 1;
+}
+
+.section__photo {
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 5px hsl(0, 0%, 0%));
+}
+
+.lineDecoration {
+    border-top: 2px solid hsl(36deg 54% 84%);
+    padding-top: 20px;
+}
