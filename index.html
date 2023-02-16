@@ -1,158 +1,280 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marco Polo</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/background.css" rel="stylesheet" />
+        <link href="css/navigation.css" rel="stylesheet" />
+        <link href="css/hyperlinks.css" rel="stylesheet" />
+        <link href="css/button.css" rel="stylesheet" />
+        <link href="css/headline.css" rel="stylesheet" />
+        <link href="css/section.css" rel="stylesheet" />
+        <link href="css/table.css" rel="stylesheet" />
+        <link href="css/footer.css" rel="stylesheet" />
+        <script defer src="js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="images/paw.png" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Polo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/background.css" rel="stylesheet">
-    <link href="css/navigation.css" rel="stylesheet">
-    <link href="css/hyperlinks.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet">
-    <link href="css/headline.css" rel="stylesheet">
-    <link href="css/section.css" rel="stylesheet">
-    <link href="css/table.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <script defer src="js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-</head>
-
-<body class="body js-body">
-    <div class="background js-background">
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="hyperlink js-hyperlink" href="#o-mnie">O mnie</a></li>
-                <li class="navigation__item"><a class="hyperlink js-hyperlink" href="#osiągnięcia">Osiągnięcia</a></li>
-                <li class="navigation__item"><a class="hyperlink js-hyperlink" href="#co-lubię">Co lubię</a></li>
-                <li class="navigation__item"><a class="hyperlink js-hyperlink" href="#a-czego-nie">Czego nie lubię</a>
-                </li>
-            </ul>
-            <p><button class="button js-buttonSwitchMode">Ustaw jasny motyw</button></p>
-        </nav>
-        <header class="headline">
-            <h1 class="headline__header">Marco Polo Królewska Kraina</h1>
-        </header>
-        <section class="section" id="o-mnie">
-            <h2 class="section__headline js-sectionHeadline">Skromnie o mnie</h2>
-            <img class="section__photo" height="300" src="https://i.postimg.cc/vmzFHjjm/Marco-Polo.png"
-                alt="Najwspanialszy Marco Polo">
-            <p class="section__paragraph">Witajcie stali i nowi fani. Jestem <span
-                    class="section__paragraph--special">Marco
-                    Polo</span> <i>Królewska
-                    Kraina</i>,
-                choć miałem zwać się <b>Maximus</b> - imię to sprzątnął mi sprzed nosa starszy o kilka minut brat. Jako
-                że od maleńkości cechowałem się niebywałą wręcz <em>inteligencją</em> - rzekłbym, że nieomal
-                filozoficzną głębią - pomyślałem: <i>Muszę go prześcignąć!</i> <br> Godność swą zatem postanowiłem
-                przyjąć po wielkim podróżniku i odkrywcy. Nie
-                jest
-                to
-                miano
-                nadane na wyrost, bowiem moi rodzice pochodzili zza zachodniej granicy a ja sam odziedziczyłem żyłkę
-                mąciwody i
-                zdobywcy - wielokrotnie pakowałem swój dostojny, ofutrzony zad tam, gdzie nikt się go niespodziewał.
-                Próbowałem
-                wszystkiego, co przystoi dżentelmenowi z <em>moim pochodzeniem</em>, ale z wiekiem nabyłem tę mądrość,
-                że na
-                pokazy wśród śmietanki towarzyskiej jestem zbyt <b>mądry</b>, a na upokarzanie się posłuszeństwem - zbyt
-                <b>piękny</b>.
-            </p>
-        </section>
-        <section class="section" id="osiągnięcia">
-            <h2 class="section__headline js-sectionHeadline">Moje osiągnięcia</h2>
-            <table class="table">
-                <caption class="table__caption">Konkursy piękności</caption>
-                <thead>
-                    <tr>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Ranga</th>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Miasto</th>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Klasa</th>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Ocena</th>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Lokata</th>
-                        <th scope="col" class="table__cell table__cell--header js-tableHeader">Rok</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="table__cell table__cell--header js-tableHeader">Wystawa Międzynarodowa
-                            (CACIB)</th>
-                        <td class="table__cell js-tableCell">Poznań</td>
-                        <td class="table__cell js-tableCell">Szczeniąt</td>
-                        <td class="table__cell js-tableCell">Wybitnie obiecujący</td>
-                        <td class="table__cell js-tableCell">1</td>
-                        <td class="table__cell js-tableCell">2010</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="table__cell table__cell--header js-tableHeader">Wystawa Krajowa (CAC)
-                        </th>
-                        <td class="table__cell js-tableCell">Gostynin</td>
-                        <td rowspan="4" class="table__cell js-tableCell">Młodzieży</td>
-                        <td rowspan="5" class="table__cell js-tableCell">Doskonała</td>
-                        <td class="table__cell js-tableCell">2</td>
-                        <td rowspan="5" class="table__cell js-tableCell">2011</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="table__cell table__cell--header js-tableHeader">Wystawa Międzynarodowa
-                            (CACIB)</th>
-                        <td class="table__cell js-tableCell">Łódź</td>
-                        <td rowspan="4" class="table__cell js-tableCell">1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="2" class="table__cell table__cell--header js-tableHeader">Wystawa
-                            Krajowa (CAC)</th>
-                        <td class="table__cell js-tableCell">Kalisz</td>
-                    </tr>
-                    <tr>
-                        <td class="table__cell js-tableCell">Olsztyn</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="table__cell table__cell--header js-tableHeader">Wystawa Międzynarodowa
-                            (CACIB)</th>
-                        <td class="table__cell js-tableCell">Warszawa</td>
-                        <td class="table__cell js-tableCell">Pośrednia</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="section" id="co-lubię">
-            <h2 class="section__headline js-sectionHeadline">Co lubię</h2>
-            <ul class="section__list">
-                <li>Spać tam, gdzie inni śpią. Im ciaśniej, tym lepiej.</li>
-                <li>Jeść to, czego mi nie wolno.</li>
-                <li>Kapcie - ponad <em>wszelkie</em> piłki i gryzaki. Szczególnie te <b>pluszowe</b>.</li>
-                <li>Gonić i gryźć badziorów.</li>
-            </ul>
-            <img class="section__photo" height="200" src="https://i.postimg.cc/qvrqgm1y/Marco-Polo-Attack.jpg"
-                alt="Marco Polo gryzie bandziora">
-        </section>
-        <section class="section" id="a-czego-nie">
-            <h2 class="section__headline js-sectionHeadline">Czego nie lubię</h2>
-            <ul class="section__list">
-                <li>Kąpieli.</li>
-                <li>Mokrych łapek.</li>
-                <li>Rannych pobudek.</li>
-                <li><strong>Wiewiórek.</strong></li>
-            </ul>
-            <div class="section__decoration js-sectionDecoration">
-                <img class="section__photo js-photo" height="250" src="https://i.postimg.cc/LXcFfSF2/Squirrel.png"
-                    alt="Podły wiewiór">
-                <p class="section__paragraph js-paragraphCat">
-                    <button class="button js-buttonHideSquirrel">Przegoń wiewióra. Na dobre!</button>
+    <body class="body js-body">
+        <div class="background js-background">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="hyperlink js-hyperlink" href="#o-mnie"
+                            >O mnie</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="hyperlink js-hyperlink" href="#osiągnięcia"
+                            >Osiągnięcia</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="hyperlink js-hyperlink" href="#co-lubię"
+                            >Co lubię</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a class="hyperlink js-hyperlink" href="#a-czego-nie"
+                            >Czego nie lubię</a
+                        >
+                    </li>
+                </ul>
+                <p>
+                    <button class="button js-buttonSwitchMode">
+                        Ustaw jasny motyw
+                    </button>
                 </p>
-            </div>
-        </section>
-        <footer class="footer">
-            <p class="footer__text js-footerText">Jeśli chcecie wiedzieć więcej na temat mojej Rodziny, zapraszam do <a
-                    rel="noreferrer noopener" target="_blank" class="hyperlink js-hyperlink"
-                    href="https://www.krolewskakraina.pl/">Królewskiej Krainy!</a></p>
-        </footer>
-    </div>
-</body>
-
+            </nav>
+            <header class="headline">
+                <h1 class="headline__header">Marco Polo Królewska Kraina</h1>
+            </header>
+            <section class="section" id="o-mnie">
+                <h2 class="section__headline js-sectionHeadline">
+                    Skromnie o mnie
+                </h2>
+                <img
+                    class="section__photo"
+                    height="300"
+                    src="https://i.postimg.cc/vmzFHjjm/Marco-Polo.png"
+                    alt="Najwspanialszy Marco Polo"
+                />
+                <p class="section__paragraph">
+                    Witajcie stali i nowi fani. Jestem
+                    <span class="section__paragraph--special">Marco Polo</span>
+                    <i>Królewska Kraina</i>, choć miałem zwać się
+                    <b>Maximus</b> - imię to sprzątnął mi sprzed nosa starszy o
+                    kilka minut brat. Jako że od maleńkości cechowałem się
+                    niebywałą wręcz <em>inteligencją</em> - rzekłbym, że nieomal
+                    filozoficzną głębią - pomyślałem:
+                    <i>Muszę go prześcignąć!</i> <br />
+                    Godność swą zatem postanowiłem przyjąć po wielkim podróżniku
+                    i odkrywcy. Nie jest to miano nadane na wyrost, bowiem moi
+                    rodzice pochodzili zza zachodniej granicy a ja sam
+                    odziedziczyłem żyłkę mąciwody i zdobywcy - wielokrotnie
+                    pakowałem swój dostojny, ofutrzony zad tam, gdzie nikt się
+                    go niespodziewał. Próbowałem wszystkiego, co przystoi
+                    dżentelmenowi z <em>moim pochodzeniem</em>, ale z wiekiem
+                    nabyłem tę mądrość, że na pokazy wśród śmietanki
+                    towarzyskiej jestem zbyt <b>mądry</b>, a na upokarzanie się
+                    posłuszeństwem - zbyt <b>piękny</b>.
+                </p>
+            </section>
+            <section class="section" id="osiągnięcia">
+                <h2 class="section__headline js-sectionHeadline">
+                    Moje osiągnięcia
+                </h2>
+                <table class="table">
+                    <caption class="table__caption">
+                        Konkursy piękności
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Ranga
+                            </th>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Miasto
+                            </th>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Klasa
+                            </th>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Ocena
+                            </th>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Lokata
+                            </th>
+                            <th
+                                scope="col"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Rok
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th
+                                scope="row"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Wystawa Międzynarodowa (CACIB)
+                            </th>
+                            <td class="table__cell js-tableCell">Poznań</td>
+                            <td class="table__cell js-tableCell">Szczeniąt</td>
+                            <td class="table__cell js-tableCell">
+                                Wybitnie obiecujący
+                            </td>
+                            <td class="table__cell js-tableCell">1</td>
+                            <td class="table__cell js-tableCell">2010</td>
+                        </tr>
+                        <tr>
+                            <th
+                                scope="row"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Wystawa Krajowa (CAC)
+                            </th>
+                            <td class="table__cell js-tableCell">Gostynin</td>
+                            <td rowspan="4" class="table__cell js-tableCell">
+                                Młodzieży
+                            </td>
+                            <td rowspan="5" class="table__cell js-tableCell">
+                                Doskonała
+                            </td>
+                            <td class="table__cell js-tableCell">2</td>
+                            <td rowspan="5" class="table__cell js-tableCell">
+                                2011
+                            </td>
+                        </tr>
+                        <tr>
+                            <th
+                                scope="row"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Wystawa Międzynarodowa (CACIB)
+                            </th>
+                            <td class="table__cell js-tableCell">Łódź</td>
+                            <td rowspan="4" class="table__cell js-tableCell">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <th
+                                scope="row"
+                                rowspan="2"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Wystawa Krajowa (CAC)
+                            </th>
+                            <td class="table__cell js-tableCell">Kalisz</td>
+                        </tr>
+                        <tr>
+                            <td class="table__cell js-tableCell">Olsztyn</td>
+                        </tr>
+                        <tr>
+                            <th
+                                scope="row"
+                                class="table__cell table__cell--header js-tableHeader"
+                            >
+                                Wystawa Międzynarodowa (CACIB)
+                            </th>
+                            <td class="table__cell js-tableCell">Warszawa</td>
+                            <td class="table__cell js-tableCell">Pośrednia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="section" id="co-lubię">
+                <h2 class="section__headline js-sectionHeadline">Co lubię</h2>
+                <ul class="section__list">
+                    <li>Spać tam, gdzie inni śpią. Im ciaśniej, tym lepiej.</li>
+                    <li>Jeść to, czego mi nie wolno.</li>
+                    <li>
+                        Kapcie - ponad <em>wszelkie</em> piłki i gryzaki.
+                        Szczególnie te <b>pluszowe</b>.
+                    </li>
+                    <li>Gonić i gryźć badziorów.</li>
+                </ul>
+                <img
+                    class="section__photo"
+                    height="200"
+                    src="https://i.postimg.cc/qvrqgm1y/Marco-Polo-Attack.jpg"
+                    alt="Marco Polo gryzie bandziora"
+                />
+            </section>
+            <section class="section" id="a-czego-nie">
+                <h2 class="section__headline js-sectionHeadline">
+                    Czego nie lubię
+                </h2>
+                <ul class="section__list">
+                    <li>Kąpieli.</li>
+                    <li>Mokrych łapek.</li>
+                    <li>Rannych pobudek.</li>
+                    <li><strong>Wiewiórek.</strong></li>
+                </ul>
+                <div class="section__decoration js-sectionDecoration">
+                    <img
+                        class="section__photo js-photo"
+                        height="250"
+                        src="https://i.postimg.cc/LXcFfSF2/Squirrel.png"
+                        alt="Podły wiewiór"
+                    />
+                    <p class="section__paragraph js-paragraphCat">
+                        <button class="button js-buttonHideSquirrel">
+                            Przegoń wiewióra. Na dobre!
+                        </button>
+                    </p>
+                </div>
+            </section>
+            <footer class="footer">
+                <p class="footer__text js-footerText">
+                    Jeśli chcecie wiedzieć więcej na temat mojej Rodziny,
+                    zapraszam do
+                    <a
+                        rel="noreferrer noopener"
+                        target="_blank"
+                        class="hyperlink js-hyperlink"
+                        href="https://www.krolewskakraina.pl/"
+                        >Królewskiej Krainy!</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>
