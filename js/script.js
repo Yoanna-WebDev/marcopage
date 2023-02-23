@@ -8,13 +8,16 @@
     const imageChanging = () => {
         let imageChange = document.querySelector(".js-photo");
 
-        switch (imageChange.getAttribute("src")) {
-            case "https://i.postimg.cc/LXcFfSF2/Squirrel.png":
-                imageChange.setAttribute(
-                    "src",
-                    "https://i.postimg.cc/NG7Bj51Q/Rumcajs1.jpg"
-                );
-                break;
+        if (
+            imageChange.getAttribute(
+                "src",
+                "https://i.postimg.cc/LXcFfSF2/Squirrel.png"
+            )
+        ) {
+            imageChange.setAttribute(
+                "src",
+                "https://i.postimg.cc/NG7Bj51Q/Rumcajs1.jpg"
+            );
         }
     };
 
