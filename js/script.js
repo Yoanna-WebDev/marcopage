@@ -5,7 +5,7 @@
         );
     };
 
-    const imageChanging = () => {
+    const changeImage = () => {
         let imageChange = document.querySelector(".js-photo");
 
         if (
@@ -21,43 +21,43 @@
         }
     };
 
-    const addingDecoration = () => {
+    const addDecoration = () => {
         const decoration = document.querySelector(".js-sectionDecoration");
         decoration.classList.add("lineDecoration");
     };
 
-    const addingText = () => {
+    const addText = () => {
         const catName = document.querySelector(".js-paragraphCat");
         catName.innerText = "Przyszywany brat - Rumcajs. Postrach wiewiórek!";
     };
 
-    const hidingSquirrelImage = (buttonHideSquirrel) => {
+    const hideSquirrelImage = (buttonHideSquirrel) => {
         buttonHideSquirrel.remove();
 
-        addingText();
-        addingDecoration();
-        imageChanging();
+        addText();
+        addDecoration();
+        changeImage();
     };
 
-    const switchingButtonText = (body, buttonSwitchMode) => {
+    const switchButtonText = (body, buttonSwitchMode) => {
         buttonSwitchMode.innerText = body.classList.contains("bodyLightTheme")
             ? "Ustaw ciemny motyw"
             : "Ustaw jasny motyw";
     };
 
-    const changingFooterMode = () => {
+    const changeFooterMode = () => {
         const endText = document.querySelector(".js-footerText");
         endText.classList.toggle("endTextLightTheme");
     };
 
-    const changingHyperlinksMode = () => {
+    const changeHyperlinksMode = () => {
         const hyperlink = document.querySelectorAll(".js-hyperlink");
         hyperlink.forEach((element) => {
             element.classList.toggle("hyperlinkLightTheme");
         });
     };
 
-    const changingHeadersMode = () => {
+    const changeHeadersMode = () => {
         const headline = document.querySelectorAll(".js-sectionHeadline");
         const tableHeader = document.querySelectorAll(".js-tableHeader");
 
@@ -69,7 +69,7 @@
         });
     };
 
-    const changingButtonsMode = (buttonSwitchMode, buttonHideSquirrel) => {
+    const changeButtonsMode = (buttonSwitchMode, buttonHideSquirrel) => {
         buttonSwitchMode.classList.toggle("buttonLightTheme");
         buttonHideSquirrel.classList.toggle("buttonLightTheme");
     };
@@ -85,11 +85,11 @@
             element.classList.toggle("tableCellLightTheme");
         });
 
-        changingButtonsMode(buttonSwitchMode, buttonHideSquirrel);
-        changingHeadersMode();
-        changingHyperlinksMode();
-        changingFooterMode();
-        switchingButtonText(body, buttonSwitchMode);
+        changeButtonsMode(buttonSwitchMode, buttonHideSquirrel);
+        changeHeadersMode();
+        changeHyperlinksMode();
+        changeFooterMode();
+        switchButtonText(body, buttonSwitchMode);
     };
 
     const init = () => {
@@ -99,7 +99,7 @@
         const buttonSwitchMode = document.querySelector(".js-buttonSwitchMode");
 
         buttonHideSquirrel.addEventListener("click", () =>
-            hidingSquirrelImage(buttonHideSquirrel)
+            hideSquirrelImage(buttonHideSquirrel)
         );
         buttonSwitchMode.addEventListener("click", () =>
             toggleLightMode(buttonSwitchMode, buttonHideSquirrel)
